@@ -32,9 +32,7 @@ async function FilterHeader({ year, month }) {
       <nav>
         <ul>
           {links.map((link) => {
-            const href = year
-              ? `/archive/${year}/${link}`
-              : `/archive/${link}`;
+            const href = year ? `/archive/${year}/${link}` : `/archive/${link}`;
 
             return (
               <li key={link}>
